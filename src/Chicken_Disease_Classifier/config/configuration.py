@@ -2,7 +2,7 @@ from Chicken_Disease_Classifier.constants import *
 import os
 from pathlib import Path
 from Chicken_Disease_Classifier.utils.common import read_yaml, create_directories
-from Chicken_Disease_Classifier.entity import (DataIngestionConfig,)
+from Chicken_Disease_Classifier.entity import (DataIngestionConfig)
 
 
 class ConfigurationManager:
@@ -13,7 +13,7 @@ class ConfigurationManager:
         self.config = read_yaml(config_filepath)
         self.params = read_yaml(params_filepath)
 
-        create_directories([self.config.artifacts_root])
+        create_directories([self.config.datafacts_root])
 
     def get_data_ingestion_config(self) -> DataIngestionConfig:
         config = self.config.data_ingestion
