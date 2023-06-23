@@ -15,3 +15,16 @@ class PrepareBaseModelTrainingPipeline:
         prepare_base_model = PrepareBaseModel(config=prepare_base_model_config)
         prepare_base_model.get_base_model()
         prepare_base_model.update_base_model()
+
+
+STAGE_NAME = "Preparation of Base Model"
+
+try:
+    logger.info(f"*******************")
+    logger.info(f">>>>>>>>>>>>>>>Stage: {STAGE_NAME} Started Successfully")
+    obj = PrepareBaseModelTrainingPipeline()
+    obj.main()
+    logger.info(f">>>>>>>>>>>>>>>Stage: {STAGE_NAME} Completed <<<<<<<\n\nx============x")
+except Exception as e:
+    logger.exception(e)
+    raise e
