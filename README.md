@@ -4,7 +4,7 @@
 </head>
 <body>
   <h1>Chicken Disease Classification</h1>
-  
+
   <h2>Project Overview</h2>
   <p>The project focuses on the classification of poultry diseases using the VGG16 model. It aims to predict whether a chicken is healthy or has a specific disease based on fecal images. The dataset consists of poultry fecal images captured using the Open Data Kit (ODK) app on mobile phones in Arusha and Kilimanjaro regions in Tanzania between September 2020 and February 2021.</p>
   
